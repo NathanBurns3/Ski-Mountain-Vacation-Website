@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title> Ski Mountain Vacation </title>
+		<meta charset="utf-8">
+		<link href="index.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="top">
+			<div class="logo"><a href="#"><img src="logo2.png" alt="logo" width="98" height="50"></a></div>
+			<nav>
+				<ul class="menu">
+					<li><a class="active" href="index.html"> Home </a></li>
+					<li><a href="decisionR.html"> Resorts around the US </a></li>
+					<li><a href="decisionP.html"> Places to Stay </a></li>
+					<li><a href="decisionD.html"> Dining Options </a></li>
+					<li><a href="decisionV.html"> Videos and Photos </a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="main">
+			<div>
+				<img class="e" src="resort.jpeg" alt="Resort">
+				<div class="f">
+					<h1> Ski Mountain Vacation </h1>
+				</div>
+			</div>	
+
+			<div class="b">
+				<div class="d">
+					<p> Our mission is to help you, our audience, find the perfect location for your next ski trip. We offer data and information from 20 unique resorts located across the United States. First, you need to decide what coast you would like to visit. Then from there, you will be able to pick different hotels or condos to stay at and any restaurants nearby. If you have any questions or comments leave them down below in the "Contact Us" button. </p>
+				</div>
+
+				<div class="dropdown">
+  					<button onclick="myFunction()" class="dropbtn">Contact Us</button>
+  					<div id="myDropdown" class="dropdown-content">
+    					<form>
+							<label for="FName"> *First Name: </label>
+							<input type="text" id="FName" name="FName" required="required">
+							<br>
+
+							<label for="LName"> *Last Name: </label>
+							<input type="text" id="LName" name="LName" required="required">
+							<br>
+
+							<label for="email"> *E-mail: </label>
+							<input type="email" id="email" name="email" size="40" required="required">
+							<br>
+
+							<label for="phone"> Phone: </label>
+							<input type="tel" id="phone" name="phone" maxlength="12">
+							<br>
+
+							<label for="message"> *Message: </label>
+							<textarea id="message" name="message" rows="2" cols="30" required="required"></textarea>
+							<br>
+							<input type="submit" value="submit">
+						</form>
+  					</div>
+				</div>
+
+				<footer>
+					Copyright &copy; 2021 University of Cincinnati, IT2040 <br>
+					<a href="mailto:burnsnr@mail.uc.edu"> burnsnr@mail.uc.edu </a>
+				</footer>
+			</div>
+		</div>
+		<script>
+			/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+			  document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(event) {
+			  if (!event.target.matches('.dropbtn')) {
+			    var dropdowns = document.getElementsByClassName("dropdown-content");
+			    var i;
+			    for (i = 0; i < dropdowns.length; i++) {
+			      var openDropdown = dropdowns[i];
+			      if (openDropdown.classList.contains('show')) {
+			        openDropdown.classList.remove('show');
+			      }
+			    }
+			  }
+			}
+		</script>
+	</body>
+</html>
